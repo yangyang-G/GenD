@@ -66,6 +66,10 @@ python app/run.py
 
 ## Training
 
+### Datasets
+
+To facilitate reproducibility, preprocessed training, validation, and test datasets were uploaded to [Hugging Face](https://huggingface.co/datasets/yermandy/GenD).
+
 ### Set up environment
 
 ``` bash
