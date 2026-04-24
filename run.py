@@ -41,6 +41,10 @@ def load_third_party_model(config: Config) -> BaseDeepakeDetectionModel:
 
         return GenDHF(config)
 
+    if "ResNet50" in config.checkpoint:
+        from src.model.ResNet50 import ResNet50
+
+        return ResNet50(config)
 
     raise ValueError(f"Unknown third party model in checkpoint path: {config.checkpoint}")
 

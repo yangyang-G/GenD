@@ -1,4 +1,5 @@
 from . import (
+    baselines,
     examples,
     third_party,
     wacv_rebuttal,
@@ -7,6 +8,7 @@ from . import (
 )
 
 experiments = {
+    **baselines.experiments,
     **examples.experiments,
     **third_party.experiments,
     **wacv_rebuttal.experiments,
