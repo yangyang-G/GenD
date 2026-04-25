@@ -46,6 +46,16 @@ def load_third_party_model(config: Config) -> BaseDeepakeDetectionModel:
 
         return ResNet50(config)
 
+    if "EfficientNet" in config.checkpoint:
+        from src.model.EfficientNet import EfficientNet
+
+        return EfficientNet(config)
+
+    if "Xception" in config.checkpoint:
+        from src.model.Xception import Xception
+
+        return Xception(config)
+
     raise ValueError(f"Unknown third party model in checkpoint path: {config.checkpoint}")
 
 
