@@ -17,7 +17,7 @@ experiments = {
     ],
     "ResNet50-imagenet-CDFv2": [
         Config(
-            checkpoint="weights/ResNet50/resnet50_imagenet.pth",  # Only ImageNet pretrained
+            checkpoint="weights/ResNet50/resnet50-11ad3fa6.pth",  # Only ImageNet pretrained
             tst_files={"CDFv2": files.CDFv2.test},
         ),
     ],
@@ -30,7 +30,7 @@ experiments = {
     ],
     "ResNet50-imagenet-DFDC": [
         Config(
-            checkpoint="weights/ResNet50/resnet50_imagenet.pth",
+            checkpoint="weights/ResNet50/resnet50-11ad3fa6.pth",
             tst_files={"DFDC": files.DFDC.test},
         ),
     ],
@@ -67,31 +67,31 @@ experiments = {
     ],
     "ResNet50-imagenet-UADFV": [
         Config(
-            checkpoint="weights/ResNet50/resnet50_imagenet.pth",
+            checkpoint="weights/ResNet50/resnet50-11ad3fa6.pth",
             tst_files={"UADFV": files.UADFV.test},
         ),
     ],
     "ResNet50-imagenet-UADFD": [
         Config(
-            checkpoint="weights/ResNet50/resnet50_imagenet.pth",
+            checkpoint="weights/ResNet50/resnet50-11ad3fa6.pth",
             tst_files={"UADFD": files.UADFV.test},
         ),
     ],
     "ResNet50-imagenet-FF": [
         Config(
-            checkpoint="weights/ResNet50/resnet50_imagenet.pth",
+            checkpoint="weights/ResNet50/resnet50-11ad3fa6.pth",
             tst_files={"FF": files.FF.test},
         ),
     ],
     "ResNet50-imagenet-FFIW": [
         Config(
-            checkpoint="weights/ResNet50/resnet50_imagenet.pth",
+            checkpoint="weights/ResNet50/resnet50-11ad3fa6.pth",
             tst_files={"FFIW": files.FFIW.test},
         ),
     ],
     "ResNet50-imagenet-DFDC-pre-x1.3-th0.5-all": [
         Config(
-            checkpoint="weights/ResNet50/resnet50_imagenet.pth",
+            checkpoint="weights/ResNet50/resnet50-11ad3fa6.pth",
             tst_files={"DFDC-pre-x1.3-th0.5-all": DFDC_PRE_X1_3_TH0_5_ALL_TEST},
         ),
     ],
@@ -119,7 +119,7 @@ experiments = {
     ],
     "EfficientNet-imagenet-CDFv2": [
         Config(
-            checkpoint="weights/EfficientNet/efficientnet_imagenet.pth",  # Only ImageNet pretrained
+            checkpoint="weights/EfficientNet/efficientnet_b0_rwightman-7f5810bc.pth",  # Only ImageNet pretrained
             tst_files={"CDFv2": files.CDFv2.test},
         ),
     ],
@@ -132,7 +132,7 @@ experiments = {
     ],
     "EfficientNet-imagenet-DFDC": [
         Config(
-            checkpoint="weights/EfficientNet/efficientnet_imagenet.pth",
+            checkpoint="weights/EfficientNet/efficientnet_b0_rwightman-7f5810bc.pth",
             tst_files={"DFDC": files.DFDC.test},
         ),
     ],
@@ -169,31 +169,31 @@ experiments = {
     ],
     "EfficientNet-imagenet-UADFV": [
         Config(
-            checkpoint="weights/EfficientNet/efficientnet_imagenet.pth",
+            checkpoint="weights/EfficientNet/efficientnet_b0_rwightman-7f5810bc.pth",
             tst_files={"UADFV": files.UADFV.test},
         ),
     ],
     "EfficientNet-imagenet-UADFD": [
         Config(
-            checkpoint="weights/EfficientNet/efficientnet_imagenet.pth",
+            checkpoint="weights/EfficientNet/efficientnet_b0_rwightman-7f5810bc.pth",
             tst_files={"UADFD": files.UADFV.test},
         ),
     ],
     "EfficientNet-imagenet-FF": [
         Config(
-            checkpoint="weights/EfficientNet/efficientnet_imagenet.pth",
+            checkpoint="weights/EfficientNet/efficientnet_b0_rwightman-7f5810bc.pth",
             tst_files={"FF": files.FF.test},
         ),
     ],
     "EfficientNet-imagenet-FFIW": [
         Config(
-            checkpoint="weights/EfficientNet/efficientnet_imagenet.pth",
+            checkpoint="weights/EfficientNet/efficientnet_b0_rwightman-7f5810bc.pth",
             tst_files={"FFIW": files.FFIW.test},
         ),
     ],
     "EfficientNet-imagenet-DFDC-pre-x1.3-th0.5-all": [
         Config(
-            checkpoint="weights/EfficientNet/efficientnet_imagenet.pth",
+            checkpoint="weights/EfficientNet/efficientnet_b0_rwightman-7f5810bc.pth",
             tst_files={"DFDC-pre-x1.3-th0.5-all": DFDC_PRE_X1_3_TH0_5_ALL_TEST},
         ),
     ],
@@ -220,7 +220,7 @@ experiments = {
     ],
     "Xception-imagenet-CDFv2": [
         Config(
-            checkpoint="weights/Xception/xception_imagenet.pth",  # Only ImageNet pretrained
+            checkpoint="weights/Xception/inception_v3_google-0cc3c7bd.pth",  # Only ImageNet pretrained
             tst_files={"CDFv2": files.CDFv2.test},
         ),
     ],
@@ -233,7 +233,7 @@ experiments = {
     ],
     "Xception-imagenet-DFDC": [
         Config(
-            checkpoint="weights/Xception/xception_imagenet.pth",
+            checkpoint="weights/Xception/inception_v3_google-0cc3c7bd.pth",
             tst_files={"DFDC": files.DFDC.test},
         ),
     ],
@@ -270,31 +270,31 @@ experiments = {
     ],
     "Xception-imagenet-UADFV": [
         Config(
-            checkpoint="weights/Xception/xception_imagenet.pth",
+            checkpoint="weights/Xception/inception_v3_google-0cc3c7bd.pth",
             tst_files={"UADFV": files.UADFV.test},
         ),
     ],
     "Xception-imagenet-UADFD": [
         Config(
-            checkpoint="weights/Xception/xception_imagenet.pth",
+            checkpoint="weights/Xception/inception_v3_google-0cc3c7bd.pth",
             tst_files={"UADFD": files.UADFV.test},
         ),
     ],
     "Xception-imagenet-FF": [
         Config(
-            checkpoint="weights/Xception/xception_imagenet.pth",
+            checkpoint="weights/Xception/inception_v3_google-0cc3c7bd.pth",
             tst_files={"FF": files.FF.test},
         ),
     ],
     "Xception-imagenet-FFIW": [
         Config(
-            checkpoint="weights/Xception/xception_imagenet.pth",
+            checkpoint="weights/Xception/inception_v3_google-0cc3c7bd.pth",
             tst_files={"FFIW": files.FFIW.test},
         ),
     ],
     "Xception-imagenet-DFDC-pre-x1.3-th0.5-all": [
         Config(
-            checkpoint="weights/Xception/xception_imagenet.pth",
+            checkpoint="weights/Xception/inception_v3_google-0cc3c7bd.pth",
             tst_files={"DFDC-pre-x1.3-th0.5-all": DFDC_PRE_X1_3_TH0_5_ALL_TEST},
         ),
     ],
