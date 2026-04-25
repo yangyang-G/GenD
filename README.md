@@ -155,6 +155,39 @@ datasets
 find datasets/FF/DF/* -type f | sort > config/datasets/FF/DF.txt
 ```
 
+Or use the automatic scanner that supports multiple dataset folder layouts:
+
+``` bash
+python scripts/datasets/generate_filelists.py \
+    --datasets-root datasets \
+    --output-root config/datasets \
+    --respect-existing-splits \
+    --source-name-rule keep \
+    --overwrite
+```
+
+Examples:
+
+``` bash
+# Generate only FF and CDFv2 with video-level split ratios train/val/test = 8/1/1
+python scripts/datasets/generate_filelists.py \
+    --datasets FF,CDFv2 \
+    --ratios 0.8,0.1,0.1 \
+    --seed 42 \
+    --overwrite
+
+# Respect existing train/val/test folders if they exist in dataset paths
+python scripts/datasets/generate_filelists.py \
+    --respect-existing-splits \
+    --overwrite
+
+# Normalize source names across datasets to binary labels: real/fake
+python scripts/datasets/generate_filelists.py \
+    --datasets FF,CDFv2 \
+    --source-name-rule binary \
+    --overwrite
+```
+
 We manage links to files using `src/utils/files.py`.
 
 ### Cite
