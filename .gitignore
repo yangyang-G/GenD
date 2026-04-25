@@ -8,7 +8,7 @@ __pycache__
 /weights
 /logs
 /tmp
-
+/datasets
 x.py
 y.py
 z.py
